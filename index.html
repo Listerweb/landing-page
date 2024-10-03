@@ -3,17 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BEM/SCSS</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <form class="contact-form">
-      <input class="contact-form-input" type="text" placeholder="Имя" />
-      <input class="contact-form-input" type="text" placeholder="Фамилия" />
-      <input class="contact-form-input" type="email" placeholder="Email" />
-      <textarea
-        class="contact-form-description"
-        placeholder="Сообщение"
-      ></textarea>
-    </form>
+    <header class="header">
+      <a class="header__logo" href="/index.html">
+        <img src="/images/Logo.png" alt="logo" />
+      </a>
+
+      <ul class="header-nav">
+        <li><a class="header-nav__link" href="#about">About Us</a></li>
+        <li><a class="header-nav__link" href="#work"></a>How it work</li>
+        <li><a class="header-nav__link" href="#pricing"></a>Pricing</li>
+        <li><a class="header-nav__link" href="#faq"></a>FAQs</li>
+      </ul>
+      <div class="header__auth">
+        <button class="button button__white">Login</button>
+        <button class="button">Sign Up</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-info">
+          <h1 class="hero-info__title">
+            Always Track & Analyze Your Business Statistics To Succeed.
+          </h1>
+          <p class="hero-info__description">
+            A better way to manage your sales, team, clients & marketing — on a
+            single platform. Powerful, affordable & easy.
+          </p>
+          <div class="hero-info__email">
+            <input class="email" type="text" placeholder="Enter your email" />
+            <button class="button">Get started</button>
+          </div>
+          <div class="hero-info__payer">
+            <img src="/images/m_mastercard.svg" alt="mastercard" />
+            <img src="/images/m_paypall.svg" alt="paypal" />
+            <img src="/images/m_visa.svg" alt="visa" />
+          </div>
+        </div>
+
+        <img
+          class="hero__image"
+          src="/images/hero_image.png"
+          alt="hero_baner"
+        />
+      </section>
+      <section class="about">
+        <img
+          class="about__image"
+          src="/images/about_image.png"
+          alt="hero_baner"
+        />
+        <div class="about-info">
+          <button class="anchor" id="about">About us</button>
+          <h2 class="about-info__title">
+            Faster, friendlier feedback loops make life easier.
+          </h2>
+          <p class="about-info__description">
+            Add a Viewer to your team so they can see everything you share, or
+            invite people to individual documents. It’s up to you. Stakeholders
+            can check out designs in their web browser, test prototypes and
+            leave feedback for free.
+          </p>
+          <li class="about-info__list">
+            Shared Cloud Libraries, for a single source of truth
+          </li>
+          <li class="about-info__list">
+            Prototype previews for user testing and research
+          </li>
+          <li class="about-info__list">Easy organization with projects</li>
+          <li class="about-info__list">
+            Free developer handoff, right inside the browser
+          </li>
+          <li class="about-info__list">Two-factor authentication and SSO</li>
+        </div>
+      </section>
+      <!--Дальше не готово-->
+      <section class="work">
+        <div class="work-info">
+          <button class="anchor" id="about">About us</button>
+          <h2 class="work-info__title">
+            Faster, friendlier feedback loops make life easier.
+          </h2>
+          <div class="work-info__box-content">
+            <img src="/images/icon.png" alt="shared" />
+            <div class="work-info__box-content__box-description"></div>
+
+            <h2 class="work-info__box-content__box-description_title">
+              Shared Cloud Libraries
+            </h2>
+            <p class="work-info__box-content__box-description_paragraph">
+              Navigate to the Your work panel in the left sidebar. Select the
+              library you want to share. Select the Share icon in the upper
+              right to share the library.
+            </p>
+          </div>
+        </div>
+
+        <img class="work__image" src="/images/work.png" alt="hero_baner" />
+      </section>
+    </main>
   </body>
 </html>

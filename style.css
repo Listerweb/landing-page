@@ -1,1 +1,170 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+body {
+  background: #f0f0f0;
+}
+
+.header {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  height: 120px;
+}
+.header-nav {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin-right: auto;
+  /*Странно, при наведении, срабатывает
+  только кнопка About Us. 
+  Остальные не работают при наведении*/
+}
+.header-nav__link {
+  color: #151515;
+  padding-bottom: 15px;
+  font-size: 18px;
+  border-bottom: transparent solid 2px;
+  text-decoration: none;
+}
+.header-nav__link:hover {
+  border-bottom: #151515 solid 2px;
+}
+.header-nav__link:viited {
+  border-bottom: #151515 solid 2px;
+}
+.header__auth {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  color: #ffffff;
+  background: #151515;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+}
+.button__white {
+  color: #151515;
+  background: #ffffff;
+}
+
+/* Непонятно. Хотел на кнопках менять цвет при наведении, 
+/*не срабатывает Кнопка, которая по умолчанию белая стоит 
+.button:hover {
+  color: $accent-color;
+  background: #ffffff;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+  &__white:hover {
+    color: #ffffff;
+    background: $accent-color;
+  }
+}
+*/
+.hero {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+.hero .hero-info {
+  margin-top: 90px;
+}
+.hero .hero-info__title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 70px;
+}
+.hero .hero-info__description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 565px;
+}
+.hero .hero-info__email {
+  width: 505px;
+  display: flex;
+  margin-top: 40px;
+  gap: 0px;
+}
+.hero .hero-info__payer {
+  display: flex;
+  gap: 28px;
+  margin-top: 80px;
+}
+
+.email {
+  background: #ffffff;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+}
+
+.about {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 200px;
+}
+.about .about-info {
+  width: 750px;
+}
+.about .about-info__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-top: 40px;
+}
+.about .about-info__description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.about .about-info__list {
+  width: 570px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.about .about__image {
+  width: 500px;
+}
+
+.anchor {
+  font-size: 18px;
+  padding: 6px 20px;
+  border: #000000 solid 1px;
+  text-transform: uppercase;
+}
+
+/*.work {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 200px;
+
+  .work-info {
+    width: 750px;
+    &__title {
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 60px;
+      margin-top: 40px;
+    }
+    &__box-content {
+      display: flex;
+    }
+  }
+}
+*//*# sourceMappingURL=style.css.map */

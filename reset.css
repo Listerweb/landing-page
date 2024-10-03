@@ -2,10 +2,5 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-img {
-  width: 100%;
-}
-ul li {
-  list-style: none;
+  font-family: Montserrat, sans-serif;
 }

@@ -1,0 +1,375 @@
+@charset "UTF-8";
+body,
+html {
+  background: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+.header {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  height: 120px;
+}
+.header-nav {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin-right: auto;
+}
+.header-nav__link {
+  color: #151515;
+  padding-bottom: 15px;
+  font-size: 18px;
+  border-bottom: transparent solid 2px;
+  text-decoration: none;
+}
+.header-nav__link:hover {
+  border-bottom: #151515 solid 2px;
+}
+.header__auth {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  color: #ffffff;
+  background: #151515;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+}
+.button:hover {
+  color: #151515;
+  background: #ffffff;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+}
+.button:hover--white:hover {
+  color: #ffffff;
+  background: #151515;
+}
+.button--white {
+  color: #151515;
+  background: #ffffff;
+}
+.button--white:hover {
+  color: #ffffff;
+  background: #151515;
+}
+
+.hero {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+.hero .hero-info {
+  margin-top: 90px;
+}
+.hero .hero-info__title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 70px;
+}
+.hero .hero-info__description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 565px;
+}
+.hero .hero-info__email {
+  width: 505px;
+  display: flex;
+  margin-top: 40px;
+  gap: 0px;
+}
+.hero .hero-info__payer {
+  display: flex;
+  gap: 28px;
+  margin-top: 80px;
+}
+
+.email {
+  background: #ffffff;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+}
+
+.about {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 200px;
+}
+.about .about-info {
+  width: 750px;
+}
+.about .about-info__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-top: 40px;
+}
+.about .about-info__description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.about .about-info__list {
+  width: 570px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.about .about__image {
+  width: 500px;
+}
+
+.anchor {
+  font-size: 14px;
+  padding: 6px 20px;
+  border: #000000 solid 1px;
+  text-transform: uppercase;
+}
+
+/*Секция "How it work"*/
+.work {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 200px;
+}
+
+.work-info {
+  width: 750px;
+}
+.work-info__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-top: 40px;
+}
+.work-info__box-content {
+  display: flex;
+  gap: 48px;
+  margin-top: 20px;
+}
+.work-info__box-content__icon {
+  width: 100px;
+  height: 100px;
+}
+.work-info__box-content__box-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Секция "pricing"*/
+.pricing {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 200px;
+}
+.pricing__image {
+  width: 470px;
+  height: 500px;
+}
+
+.pricing-info {
+  width: 750px;
+  text-align: right;
+}
+.pricing-info__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-top: 120px;
+}
+
+/*Секция "price" GRID*/
+.price-count {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  gap: 40px;
+  height: 644px;
+}
+.price-count__month {
+  border: #000000 solid 1px;
+  padding: 40px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-count__month__info {
+  display: flex;
+}
+.price-count__month__info__dollar {
+  font-size: 20px;
+  font-weight: 800;
+}
+.price-count__month__info__count {
+  font-size: 80px;
+  font-weight: 800;
+}
+.price-count__month__info__info {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: 800;
+}
+.price-count__month__list {
+  width: 570px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.price-count__yearly {
+  padding: 40px;
+  background: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-count__yearly__info {
+  display: flex;
+}
+.price-count__yearly__info__dollar {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+.price-count__yearly__info__count {
+  font-size: 80px;
+  font-weight: 800;
+  color: #ffffff;
+}
+.price-count__yearly__info__info {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+.price-count__yearly__list {
+  width: 570px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+.price-count__alltime {
+  padding: 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-count__alltime__info {
+  display: flex;
+}
+.price-count__alltime__info__dollar {
+  font-size: 20px;
+  font-weight: 800;
+}
+.price-count__alltime__info__count {
+  font-size: 80px;
+  font-weight: 800;
+}
+.price-count__alltime__info__info {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: 800;
+}
+.price-count__alltime__list {
+  width: 570px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*footer*/
+.footer {
+  background: #151515;
+  margin-top: 200px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.footer-info {
+  padding-bottom: 32px;
+}
+
+.footer-content {
+  width: 464px;
+}
+
+.footer-content__title {
+  color: #ffffff;
+  margin-top: 43px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.footer-content__email {
+  border: #ffffff solid 1px;
+  display: flex;
+  margin-top: 40px;
+  gap: 0px;
+}
+
+.footer-pages-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 100px;
+  color: #ffffff;
+  line-height: 32px;
+}
+
+.footer-sign {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 155px;
+}
+.footer-sign__signature {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
